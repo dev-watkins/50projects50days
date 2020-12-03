@@ -17,8 +17,6 @@ const update = () => {
 
   progress.style.width = progressPercent;
 
-  console.log(currentActive === 1, currentActive === circles.length)
-
   if (currentActive === 1) {prev.disabled = true;}
   else if (currentActive === circles.length) {next.disabled = true;}
   else {prev.disabled = false; next.disabled = false;}
