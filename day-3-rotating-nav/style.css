@@ -51,7 +51,7 @@ nav ul li i {
   margin-right: 10px;
 }
 
-.container {
+.content-container {
   background-color: #fafafa;
   transition: transform 0.5s linear;
   transform-origin: top left;
@@ -60,7 +60,7 @@ nav ul li i {
   padding: 50px 75px;
 }
 
-.container.show-nav {
+.container.show-nav .content-container {
   transform: rotate(-20deg);
 }
 
@@ -90,6 +90,7 @@ nav ul li i {
   position: fixed;
   top: -100px;
   left: -100px;
+  z-index: 100;
 }
 
 .circle {
@@ -102,7 +103,7 @@ nav ul li i {
 }
 
 .container.show-nav .circle-container .circle {
-  transform: rotate(-75deg);
+  transform: rotate(-90deg);
 }
 
 .circle button {
